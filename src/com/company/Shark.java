@@ -5,7 +5,6 @@ public class Shark extends Animal {
     }
 
     public void attack(){
-        System.out.println("It's a shark.");
+        System.out.println("Shark is attacking.");
     }
-
 }

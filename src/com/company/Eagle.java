@@ -4,6 +4,6 @@ public class Eagle  extends Animal{
     public Eagle() {
     }
     public void fly(){
-        System.out.println("It's an eagle.");
+        System.out.println("Eagle is flying.");
     }
 }

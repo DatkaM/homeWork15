@@ -3,8 +3,8 @@ package com.company;
 public class Animal {
     public Animal() {
     }
-    public void method(){
-        System.out.println("It's an animal.");
+    public void getEatMethod(){
+        System.out.println("Animal is eating.");
     }
 
     @Override

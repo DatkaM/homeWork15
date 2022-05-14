@@ -3,27 +3,35 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Animal shark = new Shark();
-        Animal turtle = new Turtle();
-        Animal eagle = new Eagle();
+        // write your code here
+        Animal[] animal = {new Shark(), new Turtle(), new Eagle()};
+
+        Shark [] sharks = new Shark[3];
+        Turtle [] turtles = new Turtle[3];
+        Eagle [] eagles = new Eagle[3];
 
 
-        Animal [] animals = {shark,turtle,eagle};
-        for(Animal animal: animals){
-            if (animal instanceof Shark){
-                ((Shark) animal).attack();
-                System.out.println(shark.getClass());
+
+        for(Animal animals: animal){
+            if (animals instanceof Shark){
+                ((Shark) animals).attack();
+                System.out.println(animals.getClass());
+                sharks[0] = (Shark) animals;
+            }
+            else if (animals instanceof Turtle){
+                ((Turtle) animals).swim();
+                System.out.println(animals.getClass());
+                turtles[0]=(Turtle) animals;
+            }
+            else if(animals instanceof Eagle){
+                ((Eagle) animals).fly();
+                System.out.println(animals.getClass());
+                eagles[0]=(Eagle) animals;
             }
 
-            else if (animal instanceof Turtle){
-                ((Turtle) animal).swim();
-                System.out.println(turtle.getClass());
-            }
-            else if(animal instanceof Eagle){
-                ((Eagle) animal).fly();
-                System.out.println(eagle.getClass());
-            }
-             }
+    }
     }
 }
+
+
+

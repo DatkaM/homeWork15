@@ -4,6 +4,6 @@ public class Turtle  extends Animal{
     public Turtle() {
     }
     public void swim(){
-        System.out.println("It's a turtle.");
+        System.out.println("Turtle is swimming.");
     }
 }
